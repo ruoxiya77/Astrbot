@@ -1,0 +1,60 @@
+{
+  "enabled_groups": {
+    "description": "启用检测的群号列表，填群号才检测，为空则不检测任何群",
+    "type": "list",
+    "item_type": "string",
+    "default": [],
+    "hint": "每行一个群号，不填则不生效"
+  },
+  "admins": {
+    "description": "管理员QQ号列表，填了才能使用全体禁言、白名单等管理员命令",
+    "type": "list",
+    "item_type": "string",
+    "default": [],
+    "hint": "每行一个QQ号"
+  },
+  "spam_trigger": {
+    "description": "刷屏触发阈值（1秒内发多少条消息或多少个图片/表情算刷屏）",
+    "type": "int",
+    "default": 5
+  },
+  "spam_window": {
+    "description": "刷屏检测时间窗口（秒）",
+    "type": "int",
+    "default": 1
+  },
+  "spam_mute_seconds": {
+    "description": "刷屏禁言时长（秒）",
+    "type": "int",
+    "default": 60
+  },
+  "url_mute_seconds": {
+    "description": "网页链接禁言时长（秒），检测到http/https链接时触发",
+    "type": "int",
+    "default": 120
+  },
+  "private_notify": {
+    "description": "是否私聊提醒违规用户",
+    "type": "bool",
+    "default": true
+  },
+  "funny_mute": {
+    "description": "启用趣味禁言文案",
+    "type": "bool",
+    "default": true
+  },
+  "funny_mute_words": {
+    "description": "趣味禁言文案列表，可用 {name} 占位代表用户昵称",
+    "type": "list",
+    "item_type": "string",
+    "default": ["{name} 被神秘力量静音，先去喝杯茶吧~", "{name} 你发得太快了，先歇一会儿~", "{name} 已被禁言套餐安排上了，请耐心等待"],
+    "hint": "每行一条文案"
+  },
+  "whitelist": {
+    "description": "白名单QQ号列表，白名单用户不受任何检测（通过 /加白 /移白 管理）",
+    "type": "list",
+    "item_type": "string",
+    "default": [],
+    "hint": "每行一个QQ号"
+  }
+}

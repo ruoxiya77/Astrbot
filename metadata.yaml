@@ -1,0 +1,8 @@
+name: astrbot_plugin_anti_spam_simple
+display_name: 刷屏检测
+desc: 刷屏检测 + 网页链接拦截 + 全体禁言/解禁
+short_desc: 刷屏检测
+version: v1.0.0
+author: 若曦
+repo: https://github.com/YourName/astrbot_plugin_anti_spam_simple
+astrbot_version: ">=4.16"
